@@ -11,7 +11,7 @@ public class Ator {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idAutor;
+    private Long idAtor;
     private String nome;
     private Date dataNascimento;
     private String sexo;
@@ -21,16 +21,16 @@ public class Ator {
     }
 
     public Ator(Long idAtor, String nome ){
-        this.idAutor = idAtor;
+        this.idAtor = idAtor;
         this.nome = nome;
     }
 
-    public Long getIdAutor() {
-        return idAutor;
+    public Long getIdAtor() {
+        return idAtor;
     }
 
-    public void setIdAutor(Long idAutor) {
-        this.idAutor = idAutor;
+    public void setIdAutor(Long idAtor) {
+        this.idAtor = idAtor;
     }
 
     public String getNome() {

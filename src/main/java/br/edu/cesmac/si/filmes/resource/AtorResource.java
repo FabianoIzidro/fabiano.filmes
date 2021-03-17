@@ -27,7 +27,7 @@ public class AtorResource {
         atorRepository.save(ator);
 
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-                .buildAndExpand(ator.getIdAutor()).toUri();
+                .buildAndExpand(ator.getIdAtor()).toUri();
 
         return ResponseEntity.created(uri).build();
     }
