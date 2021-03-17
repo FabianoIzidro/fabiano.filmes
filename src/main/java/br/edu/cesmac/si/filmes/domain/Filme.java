@@ -24,6 +24,13 @@ public class Filme {
 
     }
 
+    public Filme(Long idFilme, String titulo, Date dataLancamento, String sinopse ){
+        this.idFilme = idFilme;
+        this.titulo = titulo;
+        this.dataLancamento = dataLancamento;
+        this.sinopse = sinopse;
+    }
+
     public Long getIdFilme() {
         return idFilme;
     }

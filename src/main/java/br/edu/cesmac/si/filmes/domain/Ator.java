@@ -20,6 +20,11 @@ public class Ator {
     public Ator() {
     }
 
+    public Ator(Long idAtor, String nome ){
+        this.idAutor = idAtor;
+        this.nome = nome;
+    }
+
     public Long getIdAutor() {
         return idAutor;
     }

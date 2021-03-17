@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 @Entity
 public class Genero {
     @Id
@@ -15,6 +16,12 @@ public class Genero {
 
     public Genero(){
 
+    }
+
+    public Genero(Long idGenero, String nome, String descricao ){
+        this.idGenero = idGenero;
+        this.nome = nome;
+        this.descricao = descricao;
     }
 
     public Long getIdGenero() {
