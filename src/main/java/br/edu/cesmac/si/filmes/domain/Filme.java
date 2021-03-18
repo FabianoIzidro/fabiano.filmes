@@ -1,12 +1,9 @@
 package br.edu.cesmac.si.filmes.domain;
 
 import java.util.Date;
+import java.util.List;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 
 @Entity
@@ -19,6 +16,9 @@ public class Filme {
     private String sinopse;
     @ManyToOne
     private Genero genero;
+
+    @OneToMany
+    private List<Ator> ator;
 
     public Filme() {
 
